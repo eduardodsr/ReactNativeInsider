@@ -93,7 +93,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [React Native](https://reactnative.dev)
 - [Expo](https://expo.io) &rarr; é uma ferramenta utilizada no desenvolvimento mobile, react native, que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-<!-->
+  
+<!--
 - [expo-clipboard](https://docs.expo.io/versions/latest/react-native/clipboard/)
 - [react-native-slider](https://github.com/callstack/react-native-slider)
 -->
