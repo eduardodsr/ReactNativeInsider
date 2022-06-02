@@ -1,0 +1,13 @@
+import React from "react";
+import { View, StatusBar } from "react-native";
+
+import Home from "./src/pages/Home";
+
+export default function App() {
+  return(
+    <>
+      <StatusBar backgroundColor="#232630" barStyle="ligt-content" />
+      <Home/>
+    </>
+  )
+}
