@@ -85,19 +85,62 @@ Estrutura inicial do projeto, link do projeto no [Figma.](https://www.figma.com/
 ---
 
 
-<h2  id="techs"> ⚙️ 🚀   Tecnologias Utilizadas </h2>
+<h2  id="techs"> ⚙️ 🚀   Tecnologias Utilizadas / Bibliotecas </h2>
 
  
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [React Native](https://reactnative.dev)
-- [Expo](https://expo.io) &rarr; é uma ferramenta utilizada no desenvolvimento mobile, react native, que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
+  
+- [Expo](https://expo.io) &rarr; O Expo é uma ferramenta utilizada no desenvolvimento mobile, react native, que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
+
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   
-<!--
-- [expo-clipboard](https://docs.expo.io/versions/latest/react-native/clipboard/)
-- [react-native-slider](https://github.com/callstack/react-native-slider)
--->
+- [React Navigation](https://reactnavigation.org/) &rarr; React Navigation é uma biblioteca popular para roteamento e navegação em uma aplicação React Native. Essa biblioteca ajuda a resolver o problema de navegar entre várias telas e compartilhar dados entre elas.
+
+<br>
+
+### React Navigation
+
+Expo &rarr; React Navigation &rarr; Instalando as seguintes bibliotecas. No terminal executar o comando:
+- <code> expo install @react-navigation/native </code>
+- <code> expo install react-native-screens react-native-safe-area-context </code>
+- <code> expo install @react-navigation/native-stack </code>
+
+<br>
+
+### Expo
+
+O Expo é uma ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
+
+- **Para que serve o expo?**
+Quando iniciamos no desenvolvimento mobile percebemos que o número de API’s e recursos nativos que podemos controlar através da nossa aplicação é gigante, e muitas vezes não nos recordamos de todas opções que temos disponíveis.
+
+- O **Expo**, por sua vez, oferece grande parte desses recursos de forma nativa e integrada e, por exemplo, você tem acesso à recursos como câmera, microfone, player de música, entre outros, de forma muito simples utilizando essa ferramenta.
+
+- **Vantagem**
+A vantagem é que nesse formato o desenvolvedor inicia muito rápido e em poucos minutos está criando sua aplicação, toda parte complicada foi abstraída.
+
+- **Links**
+https://blog.gft.com/br/2020/12/29/aplicacao-mobile-com-expo/
+https://medium.com/@guimaraessilas/expo-io-a3bd9c62846c
+  
+<br>
+
+### Back End / REST API / Headless CMS - Strapi
+
+https://github.com/strapi/strapi
+https://docs.strapi.io/developer-docs/latest/getting-started/quick-start.html
+https://willianjusten.com.br/introducao-ao-strapi-headless-cms
+
+CMS (sigla para Content Management System — Sistema de Gerenciamento de Conteúdo)
+- Terminal
+  - <code> npx create-strapi-app@latest **my-project** --quickstart </code>
+  - <code> npx create-strapi-app@latest blog-api --quickstart </code>
+
+- Configurar o Admin (Strapi)
+  - http://localhost:1337/admin/auth/register-admin
+
 
 ---
 
@@ -115,13 +158,19 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 # Clone este repositório
 https://github.com/eduardodsr/ReactNativeInsider.git
 
-# Acesse a pasta do projeto no terminal/cmd
+# [FrontEnd] Acesse a pasta do projeto no terminal/cmd
 $ cd blog
+
+# [BackEnd] Acesse a pasta do projeto no terminal/cmd
+$ cd blog-api
 ```
 
-### 📂 Como rodar este projeto (App) ⚠️
+### 📂 Como rodar este projeto (App) - Front-End ⚠️
 
 ```bash
+# Selecionar a pasta blog
+$ cd blog
+
 # Instale as dependências
 $ yarn install
 
@@ -131,6 +180,73 @@ $ expo start
 # O servidor inciará na porta:19002 - acesse http://localhost:19002
 $ http://localhost:19002/
 ```
+
+### 📂 Como rodar este projeto (App) - API / Back-End ⚠️
+
+```bash
+# Selecionar a pasta blog-api
+$ cd blog-api
+
+# Execute o Back-End
+$ yarn develop
+# ou
+$ npm run develop
+
+# O servidor inciará na porta:1337 - acesse http://localhost:1337/admin
+$ http://localhost:1337/admin
+```
+
+### blog-api / Back-End
+
+Consultar o post (endpoint da nossa API)
+
+http://localhost:1337/api/posts
+
+```json
+// http://localhost:1337/api/posts
+
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "7 ideias de projetos para praticar programação",
+        "description": "Neste post você vai conferir 7 ideias de projetos para colocar em pratica e treinar suas habilidades como programador seja front-end, back-end e mobile.\n\nSão ideias de projetos que vão te ajudar a melhorar suas habilidades, sua lógica de pensar, fixar seus conhecimentos.",
+        "createdAt": "2022-06-03T00:21:33.797Z",
+        "updatedAt": "2022-06-03T00:38:50.746Z",
+        "publishedAt": "2022-06-03T00:38:50.742Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}
+```
+
+### Testes endpoint (API) :white_check_mark:
+
+
+- [/api/post](http://localhost:1337/api/posts)
+- [/api/post/1](http://localhost:1337/api/posts/1)
+- [/api/post/2](http://localhost:1337/api/posts/2)
+  
+- [/api/posts?populate=cover](http://localhost:1337/api/posts?populate=cover)
+
+- [api/categories](http://localhost:1337/api/categories)
+- [api/categories/1](http://localhost:1337/api/categories/1) 
+- [api/categories/2](http://localhost:1337/api/categories/2)
+- [api/categories/3](http://localhost:1337/api/categories/3)
+- [api/categories/4](http://localhost:1337/api/categories/4)
+ 
+
+
+
 
 ---
 
