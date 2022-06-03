@@ -91,10 +91,10 @@ Estrutura inicial do projeto, link do projeto no [Figma.](https://www.figma.com/
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [React Native](https://reactnative.dev)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   
 - [Expo](https://expo.io) &rarr; O Expo é uma ferramenta utilizada no desenvolvimento mobile, react native, que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
 
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   
 - [React Navigation](https://reactnavigation.org/) &rarr; React Navigation é uma biblioteca popular para roteamento e navegação em uma aplicação React Native. Essa biblioteca ajuda a resolver o problema de navegar entre várias telas e compartilhar dados entre elas.
 
@@ -114,12 +114,12 @@ Expo &rarr; React Navigation &rarr; Instalando as seguintes bibliotecas. No term
 O Expo é uma ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
 
 - **Para que serve o expo?**
-Quando iniciamos no desenvolvimento mobile percebemos que o número de API’s e recursos nativos que podemos controlar através da nossa aplicação é gigante, e muitas vezes não nos recordamos de todas opções que temos disponíveis.
+  - Quando iniciamos no desenvolvimento mobile percebemos que o número de API’s e recursos nativos que podemos controlar através da nossa aplicação é gigante, e muitas vezes não nos recordamos de todas opções que temos disponíveis.
 
-- O **Expo**, por sua vez, oferece grande parte desses recursos de forma nativa e integrada e, por exemplo, você tem acesso à recursos como câmera, microfone, player de música, entre outros, de forma muito simples utilizando essa ferramenta.
+  - O **Expo**, por sua vez, oferece grande parte desses recursos de forma nativa e integrada e, por exemplo, você tem acesso à recursos como câmera, microfone, player de música, entre outros, de forma muito simples utilizando essa ferramenta.
 
 - **Vantagem**
-A vantagem é que nesse formato o desenvolvedor inicia muito rápido e em poucos minutos está criando sua aplicação, toda parte complicada foi abstraída.
+  - A vantagem é que nesse formato o desenvolvedor inicia muito rápido e em poucos minutos está criando sua aplicação, toda parte complicada foi abstraída.
 
 - **Links**
   - https://blog.gft.com/br/2020/12/29/aplicacao-mobile-com-expo/
@@ -129,14 +129,21 @@ A vantagem é que nesse formato o desenvolvedor inicia muito rápido e em poucos
 
 ### Back End / REST API / Headless CMS - Strapi
 
-https://github.com/strapi/strapi
-https://docs.strapi.io/developer-docs/latest/getting-started/quick-start.html
-https://willianjusten.com.br/introducao-ao-strapi-headless-cms
+- CMS (sigla para Content Management System — Sistema de Gerenciamento de Conteúdo)
+- Links
+  - https://github.com/strapi/strapi
+  - https://docs.strapi.io/developer-docs/latest/getting-started/quick-start.html
+  - https://willianjusten.com.br/introducao-ao-strapi-headless-cms
 
-CMS (sigla para Content Management System — Sistema de Gerenciamento de Conteúdo)
-- Terminal
+
+### Strati
+
+- Terminal (create-strapi-app)
   - <code> npx create-strapi-app@latest **my-project** --quickstart </code>
+  
   - <code> npx create-strapi-app@latest blog-api --quickstart </code>
+
+<br>
 
 - Configurar o Admin (Strapi)
   - http://localhost:1337/admin/auth/register-admin
