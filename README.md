@@ -21,10 +21,10 @@ O App React Native Insider é um blog para Smartphones.
 <h2  id="layout"> 🎨 Acessar o layout </h2>
 
 Estrutura inicial do projeto, link do projeto no [Figma.](https://www.figma.com/file/Hgb3JJjhfuG5zMXwjC72o4/React-Native-Insider-5)
-    - Home
-    - Detalhes
-    - Categorias
-    - Busca
+  - Home
+  - Detalhes
+  - Categorias
+  - Busca
 
 ---
 
@@ -122,8 +122,8 @@ Quando iniciamos no desenvolvimento mobile percebemos que o número de API’s e
 A vantagem é que nesse formato o desenvolvedor inicia muito rápido e em poucos minutos está criando sua aplicação, toda parte complicada foi abstraída.
 
 - **Links**
-https://blog.gft.com/br/2020/12/29/aplicacao-mobile-com-expo/
-https://medium.com/@guimaraessilas/expo-io-a3bd9c62846c
+  - https://blog.gft.com/br/2020/12/29/aplicacao-mobile-com-expo/
+  - https://medium.com/@guimaraessilas/expo-io-a3bd9c62846c
   
 <br>
 
@@ -198,43 +198,13 @@ $ http://localhost:1337/admin
 
 ### blog-api / Back-End
 
-Consultar o post (endpoint da nossa API)
-
-http://localhost:1337/api/posts
-
-```json
-// http://localhost:1337/api/posts
-
-{
-  "data": [
-    {
-      "id": 1,
-      "attributes": {
-        "title": "7 ideias de projetos para praticar programação",
-        "description": "Neste post você vai conferir 7 ideias de projetos para colocar em pratica e treinar suas habilidades como programador seja front-end, back-end e mobile.\n\nSão ideias de projetos que vão te ajudar a melhorar suas habilidades, sua lógica de pensar, fixar seus conhecimentos.",
-        "createdAt": "2022-06-03T00:21:33.797Z",
-        "updatedAt": "2022-06-03T00:38:50.746Z",
-        "publishedAt": "2022-06-03T00:38:50.742Z"
-      }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "page": 1,
-      "pageSize": 25,
-      "pageCount": 1,
-      "total": 1
-    }
-  }
-}
-```
-
-### Testes endpoint (API) :white_check_mark:
+ Testes endpoint (API) :white_check_mark:
 
 
 - [/api/post](http://localhost:1337/api/posts)
 - [/api/post/1](http://localhost:1337/api/posts/1)
 - [/api/post/2](http://localhost:1337/api/posts/2)
+- [/api/post/3](http://localhost:1337/api/posts/3)
   
 - [/api/posts?populate=cover](http://localhost:1337/api/posts?populate=cover)
 
@@ -244,9 +214,6 @@ http://localhost:1337/api/posts
 - [api/categories/3](http://localhost:1337/api/categories/3)
 - [api/categories/4](http://localhost:1337/api/categories/4)
  
-
-
-
 
 ---
 
