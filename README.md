@@ -1,4 +1,4 @@
-<h1  align="center"> React Native Insider</h1>
+<h1  align="center"> React Native Insider | Dev Blog</h1>
 
 <p  align="center"> 
     <a  href="#sobre">Sobre</a> | 
@@ -14,17 +14,17 @@
 <h2  id="sobre"> 📋 Sobre o projeto</h2>
 
 Projeto desenvolvido durante o evento React Native Insider (5º Ed) do [sujeitoprogramador](https://sujeitoprogramador.com/).
-O App React Native Insider é um blog para Smartphones. 
+O App **Dev Blog** é um projeto de um blog para desenvolvedores usando React Native.
 
 ---
   
 <h2  id="layout"> 🎨 Acessar o layout </h2>
 
-Estrutura inicial do projeto, link do projeto no [Figma.](https://www.figma.com/file/Hgb3JJjhfuG5zMXwjC72o4/React-Native-Insider-5)
-  - Home
-  - Detalhes
-  - Categorias
-  - Busca
+Estrutura inicial do projeto Dev Blog, link do projeto no [Figma.](https://www.figma.com/file/Hgb3JJjhfuG5zMXwjC72o4/React-Native-Insider-5)
+  - Home &rarr; Apresenta os conteúdos em alta. Categoria favoritada.
+  - Detalhes &rarr; Apresenta a tela de post em detalhes.
+  - Categorias &rarr; Apresenta os conteúdos relacionados com categoria selecionada.
+  - Busca &rarr; Procurar algo. Buscar um post. 
 
 ---
 
@@ -62,8 +62,10 @@ Estrutura inicial do projeto, link do projeto no [Figma.](https://www.figma.com/
 
 - No tela inicial do Android Studio, após a instalação
   - Abra o Virtual Device Manager para criar o Emulador
-    - Device Definition: <code> Pixel 3 </code>
-    - System Image: <code> Q | Api Level 29 | x86_64 | Android 10.0 (Google Play) </code>
+    - Device Definition: 
+      - <code> Pixel 3 </code>
+    - System Image: 
+      - <code> Q | Api Level 29 | x86_64 | Android 10.0 (Google Play) </code>
 
 
 ### 4º PASSO
@@ -105,9 +107,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ### Axios
 
-https://axios-http.com/ptbr/
-https://axios-http.com/ptbr/docs/intro
-https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/
+- https://axios-http.com/ptbr/
+- https://axios-http.com/ptbr/docs/intro
+- https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/
 
 
 - Installing - npm: 
@@ -116,6 +118,7 @@ https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/
 - Installing - yarn: 
   - <code> yarn add axios</code>
 
+<br>
 
 ### React Navite Asysn Storage
 
@@ -124,6 +127,7 @@ https://react-native-async-storage.github.io/async-storage/docs/install/
 - Install with Expo CLI
   - <code> expo install @react-native-async-storage/async-storage </code>
 
+<br>
 
 ### React Navigation
 
