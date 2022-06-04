@@ -39,7 +39,7 @@ export default function Home() {
 
         setFavCategory(response);
         // console.log(response);
-        alert("CATEGORIA FAVORITADA - ID: " + id );
+        // alert("Categoria Favoritada!");
     }
 
     return(
@@ -80,6 +80,12 @@ export default function Home() {
                         renderItem={ ({ item }) => <FavoritePost data={item} /> }
                     />
                 )}
+
+                <Text 
+                style={[styles.title, { marginTop: favCategory.length > 0 ? 14 : 46 }]}>
+                    Conteúdos em alta
+                </Text>
+
             </View>
             
         </SafeAreaView>
@@ -117,5 +123,13 @@ const styles = StyleSheet.create({
         backgroundColor: "#FFF",
         flex: 1,
         marginTop: -30,
+    },
+    title:{
+        fontSize: 21,
+        paddingHorizontal: 18,
+        marginBottom: 14,
+        fontWeight: "bold",
+        color: "#162133"
+
     }
 })
