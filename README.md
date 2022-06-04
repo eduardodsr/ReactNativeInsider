@@ -93,12 +93,37 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [React Native](https://reactnative.dev)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   
-- [Expo](https://expo.io) &rarr; O Expo é uma ferramenta utilizada no desenvolvimento mobile, react native, que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
-
+- [Expo](https://expo.io) &rarr; Expo é uma ferramenta utilizada no desenvolvimento mobile, react native, que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
   
 - [React Navigation](https://reactnavigation.org/) &rarr; React Navigation é uma biblioteca popular para roteamento e navegação em uma aplicação React Native. Essa biblioteca ajuda a resolver o problema de navegar entre várias telas e compartilhar dados entre elas.
+  
+- [Axios](https://github.com/axios/axios) &rarr; Axios é um cliente HTTP simples baseado em promises para o navegador e para o node.js.
+
+- [useEffect, useState](https://pt-br.reactjs.org/docs/hooks-effect.html) Usando Effect Hook &rarr; Hooks são uma nova adição ao React 16.8. Eles permitem que você use o state e outros recursos do React sem escrever uma classe.
 
 <br>
+
+### Axios
+
+https://axios-http.com/ptbr/
+https://axios-http.com/ptbr/docs/intro
+https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/
+
+
+- Installing - npm: 
+  - <code> npm install axios </code>
+
+- Installing - yarn: 
+  - <code> yarn add axios</code>
+
+
+### React Navite Asysn Storage
+
+https://react-native-async-storage.github.io/async-storage/docs/install/
+
+- Install with Expo CLI
+  - <code> expo install @react-native-async-storage/async-storage </code>
+
 
 ### React Navigation
 
@@ -111,7 +136,7 @@ Expo &rarr; React Navigation &rarr; Instalando as seguintes bibliotecas. No term
 
 ### Expo
 
-O Expo é uma ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
+Expo é uma ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
 
 - **Para que serve o expo?**
   - Quando iniciamos no desenvolvimento mobile percebemos que o número de API’s e recursos nativos que podemos controlar através da nossa aplicação é gigante, e muitas vezes não nos recordamos de todas opções que temos disponíveis.

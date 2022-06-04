@@ -36,7 +36,7 @@ function Routes() {
                 name="Category"
                 component={CategoryPosts}
                 options={{
-                    title: "React JS",
+                    title: "Category",
                     headerTintColor: "#FFF",
                     headerStyle:{
                         backgroundColor: "#232630"
